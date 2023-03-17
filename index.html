@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comments</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="section comments">
+      <div class="container">
+        <div class="comments__title">Оставить комментарий</div>
+
+        <form class="comments__form form">
+          <div class="form__field">
+            <input
+              id="inputName"
+              type="text"
+              placeholder="Введите имя"
+              class="form__name"
+              required
+            />
+          </div>
+
+          <div class="form__field">
+            <textarea
+              name=""
+              id="textareaText"
+              cols="30"
+              rows="10"
+              class="form__text"
+              placeholder="Введите комментарий"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form__field date">
+            <label>Дата: </label>
+          </div>
+          <div class="form__btn">
+            <button type="submit" class="btn comment__push">Отправить</button>
+          </div>
+        </form>
+
+        <div class="comments__items"></div>
+      </div>
+    </section>
+
+    <script src="js/scrips.js"></script>
+  </body>
+</html>
